@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ZZZ">
+        <textarea name="myText" id="myText" cols="50" rows="17" onblur="textModify()">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum totam id laborum quam, laudantium et quae assumenda accusantium eligendi nobis blanditiis iste possimus ullam est odio reprehenderit fugit illum iure?</textarea>
+        <textarea name="myText" id="myresult" cols="50" rows="17"></textarea>
+        <p id="hhh">
+
+        </p>
+    </div>
+    <div class="checkbox">
+        <p>Виберіть які параметри тексту відобразити</p>
+        
+        <div>
+            <input type="checkbox" id="numbWords" name="numbWords" checked>
+            <label for="numbWords">Кількість слів</label>
+        </div>     
+        <div>
+            <input type="checkbox" id="numbSymbols" name="numbSymbols">
+            <label for="numbSymbols">Кількість символів без пробілів</label>
+        </div>
+        <div>
+            <input type="checkbox" id="numbSpacewith" name="numbSpacewith">
+            <label for="numbSpacewith">Кількість символів з пробілами</label>
+        </div>
+        <div>
+            <input type="checkbox" id="perSymbol" name="perSymbol">
+            <label for="perSymbol">Кількість символів різного типу у відсотках</label>
+        </div>
+        <button onclick="clean()">Очистити</button>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
